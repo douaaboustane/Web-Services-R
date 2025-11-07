@@ -1,10 +1,28 @@
-HELP.md
+# -------- Maven / Java --------
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.log
+hs_err_pid*
+replay_pid*
 
-### STS ###
+# Garder le Maven Wrapper (NE PAS l’ignorer)
+# Assure-toi de versionner ces fichiers :
+#   .mvn/wrapper/maven-wrapper.jar
+#   .mvn/wrapper/maven-wrapper.properties
+#   mvnw
+#   mvnw.cmd
+
+# -------- IDEs --------
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Eclipse / STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +31,19 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# -------- OS --------
+.DS_Store
+Thumbs.db
+
+# -------- Docker (volumes locaux à ignorer) --------
+docker/data/
+docker/prometheus/data/
+docker/grafana/data/
