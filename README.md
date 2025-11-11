@@ -25,8 +25,11 @@ Conteneurisation	Docker Compose
 
 
  Configuration de la base de données
+ 
 Lancer PostgreSQL en local (Docker)
+
 cd docker
+
 docker compose up -d
 
 
