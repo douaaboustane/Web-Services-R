@@ -7,12 +7,19 @@ Elle expose des endpoints CRUD pour les entités Item et Category et inclut un s
  
 Composant	Technologie utilisée
 Langage	Java 17
+
 Framework Web	Spring Boot MVC
+
 ORM	Spring Data JPA + Hibernate
-Base de données	PostgreSQL 15
+
+Base de données	PostgreSQL 14
+
 Pool de connexions	HikariCP
+
 Monitoring	Actuator + Micrometer + Prometheus + Grafana
+
 Build Tool	Maven 3.9+
+
 Conteneurisation	Docker Compose
 
 
